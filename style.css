@@ -15,7 +15,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(2px);
+    filter: blur(3px);
     z-index: -1;
 }
 
@@ -24,10 +24,11 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
-.form {
+.form1 {
     background-color: rgba(255, 255, 255, 0.8); /* Gunakan warna latar belakang semi-transparan untuk konten */
     width: 800px;
     height: 350px;
@@ -37,6 +38,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px;
+}
+
+.form2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Gunakan warna latar belakang semi-transparan untuk konten */
+    width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+label {
+    font-weight: 900;
 }
 
 input[type="number"] {
@@ -66,7 +85,7 @@ footer {
     width: 100%;
     background-color: rgb(93, 93, 93, 33%); 
     padding: 10px 0; 
-    position: absolute; 
+    position: relative; 
     bottom: 0;
     left: 0;
     border-top: 1px solid #ccc;
@@ -83,14 +102,24 @@ footer p, footer a {
 }
 
 @media only screen and (max-width: 768px) {
-    .form {
+    .form1 {
         width: 85%; /* Mengubah lebar menjadi 90% dari lebar viewport */
         max-width: 500px; /* Lebar maksimum pada layar kecil */
         height: 325px; /* Mengubah tinggi menjadi otomatis */
     }
 
-    .form h1 {
+    .form2 {
+        width: 90%; /* Mengubah lebar menjadi 90% dari lebar viewport */
+        /*max-width: 500px;  Lebar maksimum pada layar kecil */
+        height: 425px; /* Mengubah tinggi menjadi otomatis */
+    }
+
+    .form1 h1 {
         font-size: 25px;
+    }
+
+    .form2 h1 {
+        font-size: 22px;
     }
 
     input[type="number"],
