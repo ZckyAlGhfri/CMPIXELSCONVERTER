@@ -89,6 +89,10 @@ footer p, footer a {
         height: auto; /* Mengubah tinggi menjadi otomatis */
     }
 
+    .form h1 {
+        font-size: 25px;
+    }
+
     input[type="number"],
     button {
         width: 100%; /* Mengubah lebar input dan tombol menjadi 100% */
