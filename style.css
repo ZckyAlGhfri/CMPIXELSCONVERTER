@@ -51,6 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     margin: 30px;
 }
 
@@ -109,9 +110,9 @@ footer p, footer a {
     }
 
     .form2 {
-        width: 90%; /* Mengubah lebar menjadi 90% dari lebar viewport */
+        width: 95%; /* Mengubah lebar menjadi 90% dari lebar viewport */
         /*max-width: 500px;  Lebar maksimum pada layar kecil */
-        height: 425px; /* Mengubah tinggi menjadi otomatis */
+        height: 500px; /* Mengubah tinggi menjadi otomatis */
     }
 
     .form1 h1 {
@@ -119,7 +120,7 @@ footer p, footer a {
     }
 
     .form2 h1 {
-        font-size: 22px;
+        font-size: 25px
     }
 
     input[type="number"],
