@@ -82,3 +82,20 @@ footer p, footer a {
     display: inline;
 }
 
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 90%; /* Mengubah lebar menjadi 90% dari lebar viewport */
+        max-width: 500px; /* Lebar maksimum pada layar kecil */
+        height: auto; /* Mengubah tinggi menjadi otomatis */
+    }
+
+    input[type="number"],
+    button {
+        width: 100%; /* Mengubah lebar input dan tombol menjadi 100% */
+        max-width: 300px; /* Lebar maksimum pada layar kecil */
+    }
+
+    footer {
+        font-size: 14px; /* Mengubah ukuran font footer pada layar kecil */
+    }
+}
