@@ -30,15 +30,24 @@ body {
 
 .form1 {
     background-color: rgba(255, 255, 255, 0.8); /* Gunakan warna latar belakang semi-transparan untuk konten */
-    width: 800px;
-    height: 350px;
+    width: 90%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
     margin: 30px;
+}
+
+.form1 p {
+    font-size: 17px;
+}
+
+.form1 li {
+    margin: 10px;
 }
 
 .form2 {
@@ -103,10 +112,12 @@ footer p, footer a {
 }
 
 @media only screen and (max-width: 768px) {
+    .form1 li {
+        margin: 15px;
+    }
     .form1 {
-        width: 85%; /* Mengubah lebar menjadi 90% dari lebar viewport */
-        max-width: 500px; /* Lebar maksimum pada layar kecil */
-        height: 325px; /* Mengubah tinggi menjadi otomatis */
+        width: 95%; /* Mengubah lebar menjadi 90% dari lebar viewport */
+        /* height: 325px; Mengubah tinggi menjadi otomatis */
     }
 
     .form2 {
